@@ -1,6 +1,9 @@
 {
   "name": "@medunham/tilt-example",
   "description": "Example typescript mono-repo using yarn and tilt for local development",
+  "workspaces": [
+    "libs/*"
+  ],
   "private": true,
   "scripts": {
     "build": "yarn workspaces foreach -vpt run build",
