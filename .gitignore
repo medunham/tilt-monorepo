@@ -18,3 +18,17 @@ yarn-error.log*
 node_modules
 dist
 coverage
+
+# operating system
+.DS_Store
+
+# tests
+/coverage
+/.nyc_output
+
+# vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json

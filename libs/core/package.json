@@ -1,6 +1,6 @@
 {
   "name": "@medunham/core",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "core interfaces, classes, and functions",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -13,7 +13,7 @@
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
     "test:clear": "jest --clearCache",
-    "test:coverage": "jest --coverage"
+    "test:cov": "jest --coverage"
   },
   "devDependencies": {
     "@types/jest": "^29.1.2",
