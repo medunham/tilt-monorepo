@@ -1,0 +1,30 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: tilt
+  labels:
+    name: tilt
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: example-deployment
+  namespace: tilt
+  labels:
+    app: example
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: example
+  template:
+    metadata:
+      labels:
+        app: example
+    spec:
+      containers:
+        - name: example
+          image: tilt-monorepo
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
