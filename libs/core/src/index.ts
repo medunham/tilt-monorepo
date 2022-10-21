@@ -1,1 +1,1 @@
-export const LIBRARY = 'code';
+export const LIBRARY = 'magic';

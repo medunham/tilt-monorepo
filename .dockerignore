@@ -1,0 +1,13 @@
+# Let the docker image pull dependencies and build a docker cache layer for them
+.yarn/cache
+node_modules
+
+# Ignore changes caused by coverage testing
+libs/**/coverage
+services/**/coverage
+
+# Let the docker image build dependencies when needed
+libs/**/dist
+
+# don't deploy mark down files
+*.md
