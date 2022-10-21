@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { LIBRARY } from '@medunham/core';
+import { HELPER } from '@medunham/helper';
 
 @Injectable()
 export class AppService {
   getConstant(): string {
-    return LIBRARY;
+    return HELPER + '1';
   }
 }
